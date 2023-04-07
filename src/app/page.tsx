@@ -16,7 +16,6 @@ export default async function Home({
   );
   const data = await res.json();
   const { results }: any = data;
-  console.log(data);
   if (!results) {
     throw new Error('Fail to fetch data');
   }
